@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Vendor App</title> 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <style>
+     .container {
+       width: 1200px;
+       margin: 0 auto; } 
+
+     .glow {
+      color: #FB4264;
+      font-size: 2vw;
+      line-height: 2vw;
+      text-shadow: 0 0 3vw #F40A35;
+      }
+      .glow {
+      animation: glow 1.2s ease infinite;
+      -moz-animation: glow 1.2s ease infinite;
+      -webkit-animation: glow 1.2s ease infinite;
+      }
+      @keyframes glow {
+      0%,
+      100% {
+      text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+      color: #FED128;
+      }
+      50% {
+      text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+      color: #806914;
+      }
+      }
+    </style>
+</head> 
+<body> 
+<header> 
+<div class="container"> 
+<h1 class="glow">CJAEY BAKERY</h1> 
+<strong><nav> 
+<ul class="menu"> 
+<li><a href="{{ url_for('home') }}">Home</a></li> 
+<li><a href="{{ url_for('cart') }}">Cart</a></li> 
+<li><a href="{{ url_for('statement') }}">Statement</a></li> 
+</ul> 
+</nav></strong> 
+</div> 
+</header>
+<div class="container"> 
+{% block content %} 
+{% endblock %} 
+</div>
+</body> 
+</html>

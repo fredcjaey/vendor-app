@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html> 
+<body> 
+{% extends "layout.html" %} 
+{% block content %} 
+<div class="home">
+</div>
+<style>
+       .product
+        { 
+       float : left;
+       margin-right : 10px;
+       text-align: center;
+        }
+       .product img
+       {
+       height : 200px;
+       width : 200px;
+       }
+</style>
+
+<div class="product">
+     <img src="{{url_for('static', filename='bread.png')}}"title="Bread"/>
+     <div>#400</div>
+     <input type="submit" value="Add to Cart" class="btnAddAction" />
+</div>
+<div class="product">
+     <img src="{{url_for('static', filename='coke.jpg')}}"title="Coke"/>
+     <div>#200</div>
+     <input type="submit" value="Add to Cart" class="btnAddAction" />
+</div>
+<div class="product">
+     <img src="{{url_for('static', filename='cup_cake.jpg')}}"title="Cup cake"/>
+     <div>#300</div>
+     <input type="submit" value="Add to Cart" class="btnAddAction" />
+</div>
+<div class="product">
+     <img src="{{url_for('static', filename='donut.jpg')}}"title="Donut"/>
+     <div>#200</div>
+     <input type="submit" value="Add to Cart" class="btnAddAction" />
+</div>
+<div class="product">
+     <img src="{{url_for('static', filename='Eva_water.png')}}"title="Eva water"/>
+     <div>#100</div>
+     <input type="submit" value="Add to Cart" class="btnAddAction" />
+</div>
+<div class="product">
+     <img src="{{url_for('static', filename='fanta.png')}}"title="Fanta"/>
+     <div>#200</div>
+     <input type="submit" value="Add to Cart" class="btnAddAction" />
+</div>
+<div class="product">
+     <img src="{{url_for('static', filename='meat_pie.jpg')}}"title="Meat pie"/>
+     <div>#250</div>
+     <input type="submit" value="Add to Cart" class="btnAddAction" />
+</div>
+<div class="product">
+     <img src="{{url_for('static', filename='yoghurt.png')}}"title="Yoghurt"/>
+     <div>#500</div>
+     <input type="submit" value="Add to Cart" class="btnAddAction" />
+</div>
+<div class="product">
+     <img src="{{url_for('static', filename='Ice_cream.jpg')}}"title="Ice cream"/>
+     <div>#400</div>
+     <input type="submit" value="Add to Cart" class="btnAddAction" />
+</div>
+<div class="product">
+     <img src="{{url_for('static', filename='egg_roll.jpg')}}"title="Egg roll"/>
+     <div>#150</div>
+     <input type="submit" value="Add to Cart" class="btnAddAction" />
+</div>
+{% endblock %} 
+</body> 
+</html> 
